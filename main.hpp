@@ -8,11 +8,11 @@ int readFile(const string &filename);
 
 int writeFile(const string &filename) {
     ofstream file(filename);
-    int empCount = 5; // Example number of employees
+    int empCount = 3; 
 
     if (file.is_open()) {
         for (int i = 0; i < empCount; ++i) {
-            file << "Employee " << i + 1 << endl;  // Writing dummy employee data
+            file << "Employee " << i + 1 << endl; 
         }
         file.close();
     } else {
